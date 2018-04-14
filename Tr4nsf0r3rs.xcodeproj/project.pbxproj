@@ -12,7 +12,24 @@
 		4878DEFD208145200040CD93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4878DEFB208145200040CD93 /* Main.storyboard */; };
 		4878DEFF208145230040CD93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4878DEFE208145230040CD93 /* Assets.xcassets */; };
 		4878DF02208145230040CD93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4878DF00208145230040CD93 /* LaunchScreen.storyboard */; };
+		4878DF0D208282120040CD93 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF0C208282120040CD93 /* Transformer.swift */; };
+		4878DF0F20828EF10040CD93 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF0E20828EF10040CD93 /* Team.swift */; };
+		4878DF1120828F450040CD93 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF1020828F450040CD93 /* Battle.swift */; };
+		4878DF19208293FC0040CD93 /* TTransformerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF18208293FC0040CD93 /* TTransformerTest.swift */; };
+		4878DF20208296770040CD93 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF0C208282120040CD93 /* Transformer.swift */; };
+		4878DF21208296770040CD93 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF0E20828EF10040CD93 /* Team.swift */; };
+		4878DF22208296770040CD93 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF1020828F450040CD93 /* Battle.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4878DF1B208293FC0040CD93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4878DEEC208145200040CD93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4878DEF3208145200040CD93;
+			remoteInfo = Tr4nsf0r3rs;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		097DFC0CAE5369374DB78ECE /* Pods-Tr4nsf0r3rs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tr4nsf0r3rs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tr4nsf0r3rs/Pods-Tr4nsf0r3rs.release.xcconfig"; sourceTree = "<group>"; };
@@ -22,6 +39,12 @@
 		4878DEFE208145230040CD93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4878DF01208145230040CD93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4878DF03208145230040CD93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4878DF0C208282120040CD93 /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = Tr4nsf0r3rs/Objects/Transformer.swift; sourceTree = SOURCE_ROOT; };
+		4878DF0E20828EF10040CD93 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		4878DF1020828F450040CD93 /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
+		4878DF16208293FC0040CD93 /* Tr4nsf0r3rsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tr4nsf0r3rsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4878DF18208293FC0040CD93 /* TTransformerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTransformerTest.swift; sourceTree = "<group>"; };
+		4878DF1A208293FC0040CD93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A31FE9524739663E6E9A16 /* Pods_Tr4nsf0r3rs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tr4nsf0r3rs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC53BB81FFCB546145212373 /* Pods-Tr4nsf0r3rs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tr4nsf0r3rs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tr4nsf0r3rs/Pods-Tr4nsf0r3rs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +58,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4878DF13208293FC0040CD93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				4878DEF6208145200040CD93 /* Tr4nsf0r3rs */,
+				4878DF17208293FC0040CD93 /* Tr4nsf0r3rsTests */,
 				4878DEF5208145200040CD93 /* Products */,
 				B431D074E4A80C7ACC7F146A /* Pods */,
 				C625A491CE11A46DD5A32885 /* Frameworks */,
@@ -52,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				4878DEF4208145200040CD93 /* Tr4nsf0r3rs.app */,
+				4878DF16208293FC0040CD93 /* Tr4nsf0r3rsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,9 +91,9 @@
 		4878DEF6208145200040CD93 /* Tr4nsf0r3rs */ = {
 			isa = PBXGroup;
 			children = (
+				4878DF0B208280010040CD93 /* View Controllers */,
 				4878DF0A208280010040CD93 /* Objects */,
 				4878DF09208280010040CD93 /* Other Views */,
-				4878DF0B208280010040CD93 /* View Controllers */,
 				4878DEF7208145200040CD93 /* AppDelegate.swift */,
 				4878DEFB208145200040CD93 /* Main.storyboard */,
 				4878DEFE208145230040CD93 /* Assets.xcassets */,
@@ -81,6 +113,9 @@
 		4878DF0A208280010040CD93 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				4878DF0C208282120040CD93 /* Transformer.swift */,
+				4878DF0E20828EF10040CD93 /* Team.swift */,
+				4878DF1020828F450040CD93 /* Battle.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -90,6 +125,15 @@
 			children = (
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4878DF17208293FC0040CD93 /* Tr4nsf0r3rsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4878DF18208293FC0040CD93 /* TTransformerTest.swift */,
+				4878DF1A208293FC0040CD93 /* Info.plist */,
+			);
+			path = Tr4nsf0r3rsTests;
 			sourceTree = "<group>";
 		};
 		B431D074E4A80C7ACC7F146A /* Pods */ = {
@@ -130,6 +174,24 @@
 			productReference = 4878DEF4208145200040CD93 /* Tr4nsf0r3rs.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4878DF15208293FC0040CD93 /* Tr4nsf0r3rsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4878DF1D208293FC0040CD93 /* Build configuration list for PBXNativeTarget "Tr4nsf0r3rsTests" */;
+			buildPhases = (
+				4878DF12208293FC0040CD93 /* Sources */,
+				4878DF13208293FC0040CD93 /* Frameworks */,
+				4878DF14208293FC0040CD93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4878DF1C208293FC0040CD93 /* PBXTargetDependency */,
+			);
+			name = Tr4nsf0r3rsTests;
+			productName = Tr4nsf0r3rsTests;
+			productReference = 4878DF16208293FC0040CD93 /* Tr4nsf0r3rsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,6 +204,10 @@
 				TargetAttributes = {
 					4878DEF3208145200040CD93 = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					4878DF15208293FC0040CD93 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4878DEF3208145200040CD93;
 					};
 				};
 			};
@@ -159,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				4878DEF3208145200040CD93 /* Tr4nsf0r3rs */,
+				4878DF15208293FC0040CD93 /* Tr4nsf0r3rsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -171,6 +238,13 @@
 				4878DF02208145230040CD93 /* LaunchScreen.storyboard in Resources */,
 				4878DEFF208145230040CD93 /* Assets.xcassets in Resources */,
 				4878DEFD208145200040CD93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4878DF14208293FC0040CD93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,11 +276,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4878DF0F20828EF10040CD93 /* Team.swift in Sources */,
 				4878DEF8208145200040CD93 /* AppDelegate.swift in Sources */,
+				4878DF0D208282120040CD93 /* Transformer.swift in Sources */,
+				4878DF1120828F450040CD93 /* Battle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4878DF12208293FC0040CD93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4878DF20208296770040CD93 /* Transformer.swift in Sources */,
+				4878DF21208296770040CD93 /* Team.swift in Sources */,
+				4878DF22208296770040CD93 /* Battle.swift in Sources */,
+				4878DF19208293FC0040CD93 /* TTransformerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4878DF1C208293FC0040CD93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4878DEF3208145200040CD93 /* Tr4nsf0r3rs */;
+			targetProxy = 4878DF1B208293FC0040CD93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4878DEFB208145200040CD93 /* Main.storyboard */ = {
@@ -350,7 +446,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z97F83GR8X;
 				INFOPLIST_FILE = Tr4nsf0r3rs/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Aequilibrium.Tr4nsf0r3rs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -366,11 +465,54 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z97F83GR8X;
 				INFOPLIST_FILE = Tr4nsf0r3rs/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Aequilibrium.Tr4nsf0r3rs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4878DF1E208293FC0040CD93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z97F83GR8X;
+				INFOPLIST_FILE = Tr4nsf0r3rsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Aequilibrium.Tr4nsf0r3rsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tr4nsf0r3rs.app/Tr4nsf0r3rs";
+			};
+			name = Debug;
+		};
+		4878DF1F208293FC0040CD93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z97F83GR8X;
+				INFOPLIST_FILE = Tr4nsf0r3rsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Aequilibrium.Tr4nsf0r3rsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tr4nsf0r3rs.app/Tr4nsf0r3rs";
 			};
 			name = Release;
 		};
@@ -391,6 +533,15 @@
 			buildConfigurations = (
 				4878DF07208145230040CD93 /* Debug */,
 				4878DF08208145230040CD93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4878DF1D208293FC0040CD93 /* Build configuration list for PBXNativeTarget "Tr4nsf0r3rsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4878DF1E208293FC0040CD93 /* Debug */,
+				4878DF1F208293FC0040CD93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
