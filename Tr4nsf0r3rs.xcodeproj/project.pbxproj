@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001C97035693DF64C55E3460 /* Pods_Tr4nsf0r3rs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A31FE9524739663E6E9A16 /* Pods_Tr4nsf0r3rs.framework */; };
 		4878DEF8208145200040CD93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DEF7208145200040CD93 /* AppDelegate.swift */; };
-		4878DEFA208145200040CD93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DEF9208145200040CD93 /* ViewController.swift */; };
 		4878DEFD208145200040CD93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4878DEFB208145200040CD93 /* Main.storyboard */; };
 		4878DEFF208145230040CD93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4878DEFE208145230040CD93 /* Assets.xcassets */; };
 		4878DF02208145230040CD93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4878DF00208145230040CD93 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		097DFC0CAE5369374DB78ECE /* Pods-Tr4nsf0r3rs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tr4nsf0r3rs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tr4nsf0r3rs/Pods-Tr4nsf0r3rs.release.xcconfig"; sourceTree = "<group>"; };
 		4878DEF4208145200040CD93 /* Tr4nsf0r3rs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tr4nsf0r3rs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4878DEF7208145200040CD93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4878DEF9208145200040CD93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4878DEFC208145200040CD93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4878DEFE208145230040CD93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4878DF01208145230040CD93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4878DF03208145230040CD93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A31FE9524739663E6E9A16 /* Pods_Tr4nsf0r3rs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tr4nsf0r3rs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC53BB81FFCB546145212373 /* Pods-Tr4nsf0r3rs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tr4nsf0r3rs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tr4nsf0r3rs/Pods-Tr4nsf0r3rs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001C97035693DF64C55E3460 /* Pods_Tr4nsf0r3rs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,8 @@
 			children = (
 				4878DEF6208145200040CD93 /* Tr4nsf0r3rs */,
 				4878DEF5208145200040CD93 /* Products */,
+				B431D074E4A80C7ACC7F146A /* Pods */,
+				C625A491CE11A46DD5A32885 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +59,54 @@
 		4878DEF6208145200040CD93 /* Tr4nsf0r3rs */ = {
 			isa = PBXGroup;
 			children = (
+				4878DF0A208280010040CD93 /* Objects */,
+				4878DF09208280010040CD93 /* Other Views */,
+				4878DF0B208280010040CD93 /* View Controllers */,
 				4878DEF7208145200040CD93 /* AppDelegate.swift */,
-				4878DEF9208145200040CD93 /* ViewController.swift */,
 				4878DEFB208145200040CD93 /* Main.storyboard */,
 				4878DEFE208145230040CD93 /* Assets.xcassets */,
 				4878DF00208145230040CD93 /* LaunchScreen.storyboard */,
 				4878DF03208145230040CD93 /* Info.plist */,
 			);
 			path = Tr4nsf0r3rs;
+			sourceTree = "<group>";
+		};
+		4878DF09208280010040CD93 /* Other Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Other Views";
+			sourceTree = "<group>";
+		};
+		4878DF0A208280010040CD93 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		4878DF0B208280010040CD93 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B431D074E4A80C7ACC7F146A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC53BB81FFCB546145212373 /* Pods-Tr4nsf0r3rs.debug.xcconfig */,
+				097DFC0CAE5369374DB78ECE /* Pods-Tr4nsf0r3rs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C625A491CE11A46DD5A32885 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1A31FE9524739663E6E9A16 /* Pods_Tr4nsf0r3rs.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +116,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4878DF06208145230040CD93 /* Build configuration list for PBXNativeTarget "Tr4nsf0r3rs" */;
 			buildPhases = (
+				B3ACF787C8D37808806A0EF3 /* [CP] Check Pods Manifest.lock */,
 				4878DEF0208145200040CD93 /* Sources */,
 				4878DEF1208145200040CD93 /* Frameworks */,
 				4878DEF2208145200040CD93 /* Resources */,
@@ -130,12 +176,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B3ACF787C8D37808806A0EF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tr4nsf0r3rs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4878DEF0208145200040CD93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4878DEFA208145200040CD93 /* ViewController.swift in Sources */,
 				4878DEF8208145200040CD93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,15 +344,13 @@
 		};
 		4878DF07208145230040CD93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC53BB81FFCB546145212373 /* Pods-Tr4nsf0r3rs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z97F83GR8X;
 				INFOPLIST_FILE = Tr4nsf0r3rs/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Aequilibrium.Tr4nsf0r3rs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +360,13 @@
 		};
 		4878DF08208145230040CD93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 097DFC0CAE5369374DB78ECE /* Pods-Tr4nsf0r3rs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z97F83GR8X;
 				INFOPLIST_FILE = Tr4nsf0r3rs/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Aequilibrium.Tr4nsf0r3rs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -1,0 +1,6 @@
+framework module Pods_Tr4nsf0r3rs {
+  umbrella header "Pods-Tr4nsf0r3rs-umbrella.h"
+
+  export *
+  module * { export * }
+}
