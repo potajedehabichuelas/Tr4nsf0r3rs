@@ -1,0 +1,18 @@
+
+{
+ "name": "Decepticons",
+ "members": [
+             {
+             "name": "Soundwave",
+             "strengh": 8,
+             "intelligence": 9,
+             "speed": 2,
+             "endurance": 6,
+             "rank": 7,
+             "courage": 5,
+             "firepower": 6,
+             "skill": 10
+             }
+
+    ]
+}

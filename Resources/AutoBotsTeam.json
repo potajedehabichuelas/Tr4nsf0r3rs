@@ -1,0 +1,17 @@
+
+{
+ "name": "AutoBots",
+ "members": [
+             {
+             "name": "Hubcap",
+             "strengh": 4,
+             "intelligence": 4,
+             "speed": 4,
+             "endurance": 4,
+             "rank": 4,
+             "courage": 4,
+             "firepower": 4,
+             "skill": 4
+             }
+    ]
+}

@@ -8,23 +8,37 @@
 
 import UIKit
 
-struct Team {
-    
-    private(set) var transformers: [Transformer]
+struct Team: Codable {
     
     var name: String
     
-    func addMember() {
+    private(set) var members: [Transformer] {
+        didSet {
+            self.members = self.members.sorted(by: { $0.rank > $1.rank })
+        }
+    }
+    
+    init(from decoder: Decoder) throws
+    {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        self.name = try values.decode(String.self, forKey: .name)
+        let members = try values.decode([Transformer].self, forKey: .members)
+        self.members = members.sorted(by: { $0.rank > $1.rank })
+    }
+    
+    init(name: String, members: [Transformer]) {
+        self.name = name
+        // Sort team based on its rank
+        self.members = members.sorted(by: { $0.rank > $1.rank })
+    }
+    
+    mutating func addMember(transformer: Transformer) {
         //Add member - team edited before a fight.
-        
-        //Place the member in the array (sort it)
+        self.members.append(transformer)
     }
     
-    func deleteMember() {
-        // Delete member from the team - team edited before a fight.
-    }
-    
-    func sortTeam() {
-        
+    mutating func deleteMember(index: Int) {
+        // Delete member from the team
+        self.members.remove(at: index)
     }
 }

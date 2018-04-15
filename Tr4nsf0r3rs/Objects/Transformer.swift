@@ -13,11 +13,13 @@ private struct SpecsRange {
     static let min = 1
 }
 
-struct Transformer {
+struct Transformer: Codable {
+    
+    var name: String
 
-    var strenght: Int {
+    var strength: Int {
         didSet {
-            strenght = strenght.clamped(to: SpecsRange.min...SpecsRange.max)
+            strength = strength.clamped(to: SpecsRange.min...SpecsRange.max)
         }
     }
     
@@ -64,15 +66,18 @@ struct Transformer {
     }
     
     var overalRating: Int {
-        return self.strenght + self.intelligence + self.speed + self.endurance + self.firepower
+        return self.strength + self.intelligence + self.speed + self.endurance + self.firepower
     }
     
-    init(strenght: Int, intelligence: Int, speed: Int, endurance: Int, rank: Int, courage: Int, firepower: Int, skill: Int) {
+    init(name:String, strength: Int, intelligence: Int, speed: Int, endurance: Int, rank: Int, courage: Int, firepower: Int, skill: Int) {
         
         //Set all properties and make sure they're within their expected range
         //The didset observer is not called on init(), but it might be useful if we wanted to modify the properties
         //Alternatively we could also throw an error but in this case I've decided just to clamp the values
-        self.strenght = strenght.clamped(to: SpecsRange.min...SpecsRange.max)
+        
+        self.name = name
+        
+        self.strength = strength.clamped(to: SpecsRange.min...SpecsRange.max)
         self.intelligence = intelligence.clamped(to: SpecsRange.min...SpecsRange.max)
         self.speed = speed.clamped(to: SpecsRange.min...SpecsRange.max)
         self.endurance = endurance.clamped(to: SpecsRange.min...SpecsRange.max)
@@ -81,7 +86,6 @@ struct Transformer {
         self.firepower = firepower.clamped(to: SpecsRange.min...SpecsRange.max)
         self.skill = skill.clamped(to: SpecsRange.min...SpecsRange.max)
     }
-
 }
 
 extension Comparable {
