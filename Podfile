@@ -7,5 +7,6 @@ target 'Tr4nsf0r3rs' do
   
   # Pods for Tr4nsf0r3rs
   pod 'IQKeyboardManagerSwift'
+  pod 'RMessage'
 
 end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		001C97035693DF64C55E3460 /* Pods_Tr4nsf0r3rs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A31FE9524739663E6E9A16 /* Pods_Tr4nsf0r3rs.framework */; };
+		482D98AB20850D020020EAA0 /* TeamHeaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482D98AA20850D020020EAA0 /* TeamHeaderContentView.swift */; };
 		4878DEF8208145200040CD93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DEF7208145200040CD93 /* AppDelegate.swift */; };
 		4878DEFD208145200040CD93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4878DEFB208145200040CD93 /* Main.storyboard */; };
 		4878DEFF208145230040CD93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4878DEFE208145230040CD93 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		097DFC0CAE5369374DB78ECE /* Pods-Tr4nsf0r3rs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tr4nsf0r3rs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tr4nsf0r3rs/Pods-Tr4nsf0r3rs.release.xcconfig"; sourceTree = "<group>"; };
+		482D98AA20850D020020EAA0 /* TeamHeaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamHeaderContentView.swift; sourceTree = "<group>"; };
 		4878DEF4208145200040CD93 /* Tr4nsf0r3rs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tr4nsf0r3rs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4878DEF7208145200040CD93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4878DEFC208145200040CD93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				4878DF35208434FD0040CD93 /* TeamHeaderTableViewCell.swift */,
 				4878DF37208435190040CD93 /* TeamMemberTableViewCell.swift */,
+				482D98AA20850D020020EAA0 /* TeamHeaderContentView.swift */,
 			);
 			path = "Other Views";
 			sourceTree = "<group>";
@@ -315,11 +318,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tr4nsf0r3rs/Pods-Tr4nsf0r3rs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PPTopMostController/PPTopMostController.framework",
+				"${BUILT_PRODUCTS_DIR}/RMessage/RMessage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PPTopMostController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RMessage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -357,6 +366,7 @@
 				4878DEF8208145200040CD93 /* AppDelegate.swift in Sources */,
 				4878DF0D208282120040CD93 /* Transformer.swift in Sources */,
 				4878DF342084345B0040CD93 /* TeamsEditorTableViewController.swift in Sources */,
+				482D98AB20850D020020EAA0 /* TeamHeaderContentView.swift in Sources */,
 				4878DF1120828F450040CD93 /* TBattle.swift in Sources */,
 				4878DF38208435190040CD93 /* TeamMemberTableViewCell.swift in Sources */,
 				4878DF3C2084377B0040CD93 /* BattleResultViewController.swift in Sources */,
@@ -527,7 +537,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z97F83GR8X;
 				INFOPLIST_FILE = Tr4nsf0r3rs/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Aequilibrium.Tr4nsf0r3rs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -543,7 +556,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z97F83GR8X;
 				INFOPLIST_FILE = Tr4nsf0r3rs/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Aequilibrium.Tr4nsf0r3rs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -558,7 +574,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z97F83GR8X;
 				INFOPLIST_FILE = Tr4nsf0r3rsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Aequilibrium.Tr4nsf0r3rsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -574,7 +594,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z97F83GR8X;
 				INFOPLIST_FILE = Tr4nsf0r3rsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Aequilibrium.Tr4nsf0r3rsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
