@@ -10,10 +10,33 @@ import UIKit
 
 class BattleResultViewController: UIViewController {
 
+    @IBOutlet weak var team1Label: UILabel!
+    
+    @IBOutlet weak var team2Label: UILabel!
+    
+    @IBOutlet weak var victoryLabel: UILabel!
+    
+    @IBOutlet weak var battleResultDescription: UITextView!
+    
+    var battle: TBattle! = nil
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if self.battle != nil {
+            //Set opponents label!
+            self.team1Label.text = self.battle.team1.name
+            self.team2Label.text = self.battle.team2.name
+            
+            // Start fight!
+            self.battle.startfight()
+            self.victoryLabel.text = self.battle.winnerTeam
+            //Set description
+            let (survivorsT1, survivorsT2) = self.battle.getTeamsSurvivors()
+            self.battleResultDescription.text = "There has been \(self.battle.numBattles) battle(s)\n\n \(self.battle.team1.name) team survivors: \(survivorsT1) \n\n\(self.battle.team2.name) team survivors: \(survivorsT2)\n"
+        } else {
+            print("Error setting battle teams")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +44,4 @@ class BattleResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

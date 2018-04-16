@@ -64,6 +64,7 @@ class TTransformerTest: XCTestCase {
         XCTAssertEqual(trans.courage, 6)
         XCTAssertEqual(trans.firepower, 7)
         XCTAssertEqual(trans.skill, 8)
+        XCTAssertTrue(trans.isAlive!)
         XCTAssertEqual(trans.overalRating, trans.strength + trans.intelligence + trans.speed + trans.endurance + trans.firepower)
     }
     
@@ -89,7 +90,8 @@ class TTransformerTest: XCTestCase {
             XCTAssertEqual(transformer.rank, 7)
             XCTAssertEqual(transformer.courage, 5)
             XCTAssertEqual(transformer.firepower, 6)
-            XCTAssertEqual(transformer.skill, 10)
+            XCTAssertEqual(transformer.skill, 10) // 20 in json, check filtering
+            XCTAssertTrue(transformer.isAlive!)
             XCTAssertEqual(transformer.overalRating, transformer.strength + transformer.intelligence + transformer.speed + transformer.endurance + transformer.firepower)
             
         } catch {

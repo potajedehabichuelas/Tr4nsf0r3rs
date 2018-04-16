@@ -148,7 +148,7 @@
                                     <segue destination="QNW-cJ-qde" kind="show" identifier="AddEditTeamMemberSegue" id="1ss-Zw-7jf"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="startCombatCell" rowHeight="93" id="3iC-Ol-5YW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="startCombatCell" rowHeight="93" id="3iC-Ol-5YW">
                                 <rect key="frame" x="0.0" y="223" width="375" height="93"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3iC-Ol-5YW" id="yDv-NR-ISN">
@@ -218,20 +218,88 @@
             </objects>
             <point key="canvasLocation" x="1460" y="-257"/>
         </scene>
-        <!--View Controller-->
+        <!--Battle Result View Controller-->
         <scene sceneID="v9p-re-IyM">
             <objects>
-                <viewController id="0cf-Mr-kgv" sceneMemberID="viewController">
+                <viewController id="0cf-Mr-kgv" customClass="BattleResultViewController" customModule="Tr4nsf0r3rs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xaa-Qi-HxH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycV-V0-Crs">
+                                <rect key="frame" x="16" y="124" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bw4-4z-hPp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vap-pD-F2E">
+                                <rect key="frame" x="16" y="161" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dvy-09-m1b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXc-3g-4TR">
+                                <rect key="frame" x="16" y="199" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="y4a-In-vjU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Battle Result description" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4pu-yK-JwG">
+                                <rect key="frame" x="40" y="354" width="295" height="293"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX Victory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SU9-Hs-HE8">
+                                <rect key="frame" x="20" y="301" width="335" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1cE-41-Zah"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yXc-3g-4TR" firstAttribute="leading" secondItem="9ih-Sh-aM1" secondAttribute="leading" constant="16" id="1ti-ay-Tu7"/>
+                            <constraint firstItem="9ih-Sh-aM1" firstAttribute="trailing" secondItem="vap-pD-F2E" secondAttribute="trailing" constant="16" id="7Sf-LX-Lyo"/>
+                            <constraint firstItem="9ih-Sh-aM1" firstAttribute="trailing" secondItem="ycV-V0-Crs" secondAttribute="trailing" constant="16" id="8z4-8D-nRg"/>
+                            <constraint firstItem="9ih-Sh-aM1" firstAttribute="trailing" secondItem="4pu-yK-JwG" secondAttribute="trailing" constant="40" id="BpM-vh-Pzb"/>
+                            <constraint firstItem="vap-pD-F2E" firstAttribute="top" secondItem="ycV-V0-Crs" secondAttribute="bottom" constant="7" id="IEQ-Nr-3tm"/>
+                            <constraint firstItem="9ih-Sh-aM1" firstAttribute="trailing" secondItem="SU9-Hs-HE8" secondAttribute="trailing" constant="20" id="Uvg-Hj-rOx"/>
+                            <constraint firstItem="ycV-V0-Crs" firstAttribute="leading" secondItem="9ih-Sh-aM1" secondAttribute="leading" constant="16" id="XLi-ne-AC9"/>
+                            <constraint firstItem="vap-pD-F2E" firstAttribute="leading" secondItem="9ih-Sh-aM1" secondAttribute="leading" constant="16" id="dKN-iX-098"/>
+                            <constraint firstItem="9ih-Sh-aM1" firstAttribute="trailing" secondItem="yXc-3g-4TR" secondAttribute="trailing" constant="16" id="fLV-Mt-nJy"/>
+                            <constraint firstItem="9ih-Sh-aM1" firstAttribute="bottom" secondItem="4pu-yK-JwG" secondAttribute="bottom" constant="20" id="hDR-Na-OAl"/>
+                            <constraint firstItem="ycV-V0-Crs" firstAttribute="top" secondItem="9ih-Sh-aM1" secondAttribute="top" constant="60" id="mdj-oZ-zm4"/>
+                            <constraint firstItem="4pu-yK-JwG" firstAttribute="top" secondItem="SU9-Hs-HE8" secondAttribute="bottom" constant="8" id="vFZ-AP-XRR"/>
+                            <constraint firstItem="yXc-3g-4TR" firstAttribute="top" secondItem="vap-pD-F2E" secondAttribute="bottom" constant="8" id="xbO-yP-zNr"/>
+                            <constraint firstItem="SU9-Hs-HE8" firstAttribute="centerY" secondItem="xaa-Qi-HxH" secondAttribute="centerY" constant="-10" id="yNI-Ye-V47"/>
+                            <constraint firstItem="4pu-yK-JwG" firstAttribute="leading" secondItem="9ih-Sh-aM1" secondAttribute="leading" constant="40" id="z2P-oY-ZEZ"/>
+                            <constraint firstItem="SU9-Hs-HE8" firstAttribute="leading" secondItem="9ih-Sh-aM1" secondAttribute="leading" constant="20" id="zQ4-qz-co2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9ih-Sh-aM1"/>
                     </view>
+                    <connections>
+                        <outlet property="battleResultDescription" destination="4pu-yK-JwG" id="bhS-g8-YAe"/>
+                        <outlet property="team1Label" destination="ycV-V0-Crs" id="yv6-xz-bN3"/>
+                        <outlet property="team2Label" destination="yXc-3g-4TR" id="uWo-lg-Jqj"/>
+                        <outlet property="victoryLabel" destination="SU9-Hs-HE8" id="PN6-t3-4wJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FVs-yy-ebH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1485" y="482"/>
+            <point key="canvasLocation" x="1484" y="481.70914542728639"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Koo-An-z8b">
@@ -255,7 +323,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1ss-Zw-7jf"/>
+        <segue reference="OaR-o7-hm3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

@@ -82,6 +82,7 @@ struct Transformer: Codable {
         //Alternatively we could also throw an error but in this case I've decided just to clamp the values
         
         self.name = name
+        self.isAlive = true
         
         self.strength = strength.clamped(to: SpecsRange.min...SpecsRange.max)
         self.intelligence = intelligence.clamped(to: SpecsRange.min...SpecsRange.max)
@@ -91,6 +92,24 @@ struct Transformer: Codable {
         self.courage = courage.clamped(to: SpecsRange.min...SpecsRange.max)
         self.firepower = firepower.clamped(to: SpecsRange.min...SpecsRange.max)
         self.skill = skill.clamped(to: SpecsRange.min...SpecsRange.max)
+    }
+    
+    init(from decoder: Decoder) throws
+    {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+    
+        self.name = try values.decode(String.self, forKey: .name)
+        
+        self.strength = try values.decode(Int.self, forKey: .strength).clamped(to: SpecsRange.min...SpecsRange.max)
+        self.intelligence = try values.decode(Int.self, forKey: .intelligence).clamped(to: SpecsRange.min...SpecsRange.max)
+        self.speed = try values.decode(Int.self, forKey: .speed).clamped(to: SpecsRange.min...SpecsRange.max)
+        self.endurance = try values.decode(Int.self, forKey: .endurance).clamped(to: SpecsRange.min...SpecsRange.max)
+        self.rank = try values.decode(Int.self, forKey: .rank).clamped(to: SpecsRange.min...SpecsRange.max)
+        self.courage = try values.decode(Int.self, forKey: .courage).clamped(to: SpecsRange.min...SpecsRange.max)
+        self.firepower = try values.decode(Int.self, forKey: .firepower).clamped(to: SpecsRange.min...SpecsRange.max)
+        self.skill = try values.decode(Int.self, forKey: .skill).clamped(to: SpecsRange.min...SpecsRange.max)
+        
+        self.isAlive = true
     }
     
     func isTotalWinner() -> Bool {

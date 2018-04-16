@@ -48,7 +48,7 @@ class TeamsEditorTableViewController: UITableViewController, teamNameDelegate {
     override func viewDidLayoutSubviews() {
         
         //Disable or enable scrolling if the content is bigger than the tableview frame
-        if (self.tableView.contentSize.height > self.tableView.frame.size.height) {
+        if (self.tableView.contentSize.height * 1.1 > self.tableView.frame.size.height) {
             self.tableView.isScrollEnabled = true;
         } else {
             self.tableView.isScrollEnabled = false;
@@ -188,8 +188,11 @@ class TeamsEditorTableViewController: UITableViewController, teamNameDelegate {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == combatResultSegueId {
+            guard let destVc = segue.destination as? BattleResultViewController else { return }
+            destVc.battle = TBattle(team1: self.team1, team2: self.team2)
+        }
     }
     
 
