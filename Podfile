@@ -4,8 +4,8 @@
 target 'Tr4nsf0r3rs' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for Tr4nsf0r3rs
-  pod 'IQKeyboardManager'
+  pod 'IQKeyboardManagerSwift'
 
 end
