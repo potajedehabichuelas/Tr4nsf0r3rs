@@ -228,7 +228,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXd-c4-XOq">
-                                                    <rect key="frame" x="16" y="14" width="43.5" height="21"/>
+                                                    <rect key="frame" x="16" y="18" width="43.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="fpr-Js-h3t"/>
                                                     </constraints>
@@ -252,7 +252,7 @@
                                             <constraints>
                                                 <constraint firstItem="rXd-c4-XOq" firstAttribute="leading" secondItem="Bbt-s4-nFV" secondAttribute="leadingMargin" id="OPr-Yt-lKd"/>
                                                 <constraint firstAttribute="trailing" secondItem="XGn-WS-aTc" secondAttribute="trailing" constant="16" id="cF1-iu-U3B"/>
-                                                <constraint firstItem="rXd-c4-XOq" firstAttribute="top" secondItem="Bbt-s4-nFV" secondAttribute="topMargin" constant="3" id="djo-67-deO"/>
+                                                <constraint firstItem="rXd-c4-XOq" firstAttribute="top" secondItem="Bbt-s4-nFV" secondAttribute="topMargin" constant="7" id="djo-67-deO"/>
                                                 <constraint firstItem="XGn-WS-aTc" firstAttribute="leading" secondItem="rXd-c4-XOq" secondAttribute="trailing" constant="29" id="iLc-XO-6r8"/>
                                                 <constraint firstItem="XGn-WS-aTc" firstAttribute="top" secondItem="Bbt-s4-nFV" secondAttribute="top" constant="10" id="x5a-SY-USP"/>
                                             </constraints>
