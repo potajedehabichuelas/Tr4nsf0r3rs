@@ -13,12 +13,12 @@
 		4878DEFF208145230040CD93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4878DEFE208145230040CD93 /* Assets.xcassets */; };
 		4878DF02208145230040CD93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4878DF00208145230040CD93 /* LaunchScreen.storyboard */; };
 		4878DF0D208282120040CD93 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF0C208282120040CD93 /* Transformer.swift */; };
-		4878DF0F20828EF10040CD93 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF0E20828EF10040CD93 /* Team.swift */; };
-		4878DF1120828F450040CD93 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF1020828F450040CD93 /* Battle.swift */; };
+		4878DF0F20828EF10040CD93 /* TTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF0E20828EF10040CD93 /* TTeam.swift */; };
+		4878DF1120828F450040CD93 /* TBattle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF1020828F450040CD93 /* TBattle.swift */; };
 		4878DF19208293FC0040CD93 /* TTransformerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF18208293FC0040CD93 /* TTransformerTest.swift */; };
 		4878DF20208296770040CD93 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF0C208282120040CD93 /* Transformer.swift */; };
-		4878DF21208296770040CD93 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF0E20828EF10040CD93 /* Team.swift */; };
-		4878DF22208296770040CD93 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF1020828F450040CD93 /* Battle.swift */; };
+		4878DF21208296770040CD93 /* TTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF0E20828EF10040CD93 /* TTeam.swift */; };
+		4878DF22208296770040CD93 /* TBattle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF1020828F450040CD93 /* TBattle.swift */; };
 		4878DF2720829B660040CD93 /* DecepticonsTeam.json in Resources */ = {isa = PBXBuildFile; fileRef = 4878DF2620829B660040CD93 /* DecepticonsTeam.json */; };
 		4878DF2920829CA00040CD93 /* AutoBotsTeam.json in Resources */ = {isa = PBXBuildFile; fileRef = 4878DF2820829CA00040CD93 /* AutoBotsTeam.json */; };
 		4878DF2A208411350040CD93 /* Transformer.json in Resources */ = {isa = PBXBuildFile; fileRef = 4878DF2420829A560040CD93 /* Transformer.json */; };
@@ -47,8 +47,8 @@
 		4878DF01208145230040CD93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4878DF03208145230040CD93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4878DF0C208282120040CD93 /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = Tr4nsf0r3rs/Objects/Transformer.swift; sourceTree = SOURCE_ROOT; };
-		4878DF0E20828EF10040CD93 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		4878DF1020828F450040CD93 /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
+		4878DF0E20828EF10040CD93 /* TTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTeam.swift; sourceTree = "<group>"; };
+		4878DF1020828F450040CD93 /* TBattle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBattle.swift; sourceTree = "<group>"; };
 		4878DF16208293FC0040CD93 /* Tr4nsf0r3rsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tr4nsf0r3rsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4878DF18208293FC0040CD93 /* TTransformerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTransformerTest.swift; sourceTree = "<group>"; };
 		4878DF1A208293FC0040CD93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				4878DF0C208282120040CD93 /* Transformer.swift */,
-				4878DF0E20828EF10040CD93 /* Team.swift */,
-				4878DF1020828F450040CD93 /* Battle.swift */,
+				4878DF0E20828EF10040CD93 /* TTeam.swift */,
+				4878DF1020828F450040CD93 /* TBattle.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -317,10 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4878DF0F20828EF10040CD93 /* Team.swift in Sources */,
+				4878DF0F20828EF10040CD93 /* TTeam.swift in Sources */,
 				4878DEF8208145200040CD93 /* AppDelegate.swift in Sources */,
 				4878DF0D208282120040CD93 /* Transformer.swift in Sources */,
-				4878DF1120828F450040CD93 /* Battle.swift in Sources */,
+				4878DF1120828F450040CD93 /* TBattle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,8 +329,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4878DF20208296770040CD93 /* Transformer.swift in Sources */,
-				4878DF21208296770040CD93 /* Team.swift in Sources */,
-				4878DF22208296770040CD93 /* Battle.swift in Sources */,
+				4878DF21208296770040CD93 /* TTeam.swift in Sources */,
+				4878DF22208296770040CD93 /* TBattle.swift in Sources */,
 				4878DF30208418530040CD93 /* TTeamTest.swift in Sources */,
 				4878DF19208293FC0040CD93 /* TTransformerTest.swift in Sources */,
 			);

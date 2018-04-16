@@ -32,7 +32,7 @@ class TTeamTest: XCTestCase {
         
         do {
             let jsonContents = try Data(contentsOf: url)
-            let team = try JSONDecoder().decode(Team.self, from: jsonContents)
+            let team = try JSONDecoder().decode(TTeam.self, from: jsonContents)
         
             XCTAssertEqual(team.name, "AutoBots")
             XCTAssertEqual(team.members.count, 2)

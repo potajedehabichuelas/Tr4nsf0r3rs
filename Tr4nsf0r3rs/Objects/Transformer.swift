@@ -8,6 +8,10 @@
 
 import UIKit
 
+private struct TotalWinners {
+    static let transformerNames = ["Optimus Prime", "Predaking"]
+}
+
 private struct SpecsRange {
     static let max = 10
     static let min = 1
@@ -16,6 +20,8 @@ private struct SpecsRange {
 struct Transformer: Codable {
     
     var name: String
+    
+    var isAlive: Bool = true
 
     var strength: Int {
         didSet {
@@ -86,6 +92,11 @@ struct Transformer: Codable {
         self.firepower = firepower.clamped(to: SpecsRange.min...SpecsRange.max)
         self.skill = skill.clamped(to: SpecsRange.min...SpecsRange.max)
     }
+    
+    func isTotalWinner() -> Bool {
+        return TotalWinners.transformerNames.contains(self.name) ? true : false
+    }
+
 }
 
 extension Comparable {
