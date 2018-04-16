@@ -12,7 +12,7 @@ private struct TotalWinners {
     static let transformerNames = ["Optimus Prime", "Predaking"]
 }
 
-private struct SpecsRange {
+struct SpecsRange {
     static let max = 10
     static let min = 1
 }

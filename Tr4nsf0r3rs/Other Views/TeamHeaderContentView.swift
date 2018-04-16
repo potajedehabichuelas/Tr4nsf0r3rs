@@ -8,18 +8,23 @@
 
 import UIKit
 
-protocol teamNameDelegate: class {
+protocol teamHeaderDelegate: class {
     func teamNameChanged(newName: String, team: Int)
+    func addMember(for team: Int)
 }
 
 class TeamHeaderDetailView: UIView, UITextFieldDelegate {
 
     var team: Int = -1
     
-    weak var delegate:teamNameDelegate?
+    weak var delegate:teamHeaderDelegate?
     
     @IBOutlet weak var teamName: UITextField!
-        
+
+    @IBAction func addMember(_ sender: Any) {
+        self.delegate?.addMember(for: self.team)
+    }
+    
     // MARK: - UITextFieldDelegate
     
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {

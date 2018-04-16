@@ -16,10 +16,14 @@ private let startCombatCellId = "startCombatCell"
 private let addEditTeamMemberSegueId = "AddEditTeamMemberSegue"
 private let combatResultSegueId = "combatResultSegue"
 
-class TeamsEditorTableViewController: UITableViewController, teamNameDelegate {
+class TeamsEditorTableViewController: UITableViewController, teamHeaderDelegate, NewMemberProtocol {
     
     var team1: TTeam = TTeam(name: "", members: [])
     var team2: TTeam = TTeam(name: "", members: [])
+    
+    var newMemberTeam: Int? = nil
+    
+    var editingMemberIndexPath: IndexPath? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,7 +96,35 @@ class TeamsEditorTableViewController: UITableViewController, teamNameDelegate {
         
     }
     
-    // MARK: - teamNameDelegate
+    // MARK: - NewMemberProtocol
+    
+    func newMember(member: Transformer) {
+        //Add or replace transformer in team
+        if let indexPath = self.editingMemberIndexPath {
+            //We were editing a member - remplace -> since we need to sort the array based on the rank, we delete the old member and we append it (order might not be the same so no need to remplace)
+            if self.editingMemberIndexPath?.section == 0 {
+                self.team1.members.remove(at: indexPath.row)
+            } else {
+                self.team2.members.remove(at: indexPath.row)
+            }
+        }
+        
+        // add member
+        if self.editingMemberIndexPath?.section == 0 || self.newMemberTeam == 0 {
+            self.team1.members.append(member)
+        } else {
+            self.team2.members.append(member)
+        }
+        
+        self.tableView.reloadData()
+    }
+    
+    // MARK: - teamHeaderDelegate
+    
+    func addMember(for team: Int) {
+        self.newMemberTeam = team
+        self.performSegue(withIdentifier: addEditTeamMemberSegueId, sender: self)
+    }
     
     func teamNameChanged(newName: String, team: Int) {
         //Update team name
@@ -192,6 +224,23 @@ class TeamsEditorTableViewController: UITableViewController, teamNameDelegate {
         if segue.identifier == combatResultSegueId {
             guard let destVc = segue.destination as? BattleResultViewController else { return }
             destVc.battle = TBattle(team1: self.team1, team2: self.team2)
+        } else if segue.identifier == addEditTeamMemberSegueId {
+            guard let destVc = segue.destination as? MemberEditorTableViewController else { return }
+            destVc.delegate = self
+            
+            guard let selectedIndexPath = self.tableView.indexPathForSelectedRow else {
+                self.editingMemberIndexPath = nil
+                return
+            }
+            //We are editing a member, so we clear newMember team variable to avoid issues
+            self.editingMemberIndexPath = selectedIndexPath
+            self.newMemberTeam = nil
+            
+            if selectedIndexPath.section == 0 {
+                destVc.member = self.team1.members[selectedIndexPath.row]
+            } else if selectedIndexPath.section == 1 {
+                destVc.member = self.team2.members[selectedIndexPath.row]
+            }
         }
     }
     

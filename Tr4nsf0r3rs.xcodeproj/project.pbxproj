@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		001C97035693DF64C55E3460 /* Pods_Tr4nsf0r3rs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A31FE9524739663E6E9A16 /* Pods_Tr4nsf0r3rs.framework */; };
 		482D98AB20850D020020EAA0 /* TeamHeaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482D98AA20850D020020EAA0 /* TeamHeaderContentView.swift */; };
+		482D98AD208538240020EAA0 /* MemberEditorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482D98AC208538240020EAA0 /* MemberEditorTableViewController.swift */; };
 		4878DEF8208145200040CD93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DEF7208145200040CD93 /* AppDelegate.swift */; };
 		4878DEFD208145200040CD93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4878DEFB208145200040CD93 /* Main.storyboard */; };
 		4878DEFF208145230040CD93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4878DEFE208145230040CD93 /* Assets.xcassets */; };
@@ -30,7 +31,6 @@
 		4878DF342084345B0040CD93 /* TeamsEditorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF332084345B0040CD93 /* TeamsEditorTableViewController.swift */; };
 		4878DF36208434FE0040CD93 /* TeamHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF35208434FD0040CD93 /* TeamHeaderTableViewCell.swift */; };
 		4878DF38208435190040CD93 /* TeamMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF37208435190040CD93 /* TeamMemberTableViewCell.swift */; };
-		4878DF3A208436FE0040CD93 /* MemberEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF39208436FE0040CD93 /* MemberEditorViewController.swift */; };
 		4878DF3C2084377B0040CD93 /* BattleResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF3B2084377B0040CD93 /* BattleResultViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +47,7 @@
 /* Begin PBXFileReference section */
 		097DFC0CAE5369374DB78ECE /* Pods-Tr4nsf0r3rs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tr4nsf0r3rs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tr4nsf0r3rs/Pods-Tr4nsf0r3rs.release.xcconfig"; sourceTree = "<group>"; };
 		482D98AA20850D020020EAA0 /* TeamHeaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamHeaderContentView.swift; sourceTree = "<group>"; };
+		482D98AC208538240020EAA0 /* MemberEditorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberEditorTableViewController.swift; sourceTree = "<group>"; };
 		4878DEF4208145200040CD93 /* Tr4nsf0r3rs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tr4nsf0r3rs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4878DEF7208145200040CD93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4878DEFC208145200040CD93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		4878DF332084345B0040CD93 /* TeamsEditorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsEditorTableViewController.swift; sourceTree = "<group>"; };
 		4878DF35208434FD0040CD93 /* TeamHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		4878DF37208435190040CD93 /* TeamMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberTableViewCell.swift; sourceTree = "<group>"; };
-		4878DF39208436FE0040CD93 /* MemberEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberEditorViewController.swift; sourceTree = "<group>"; };
 		4878DF3B2084377B0040CD93 /* BattleResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleResultViewController.swift; sourceTree = "<group>"; };
 		C1A31FE9524739663E6E9A16 /* Pods_Tr4nsf0r3rs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tr4nsf0r3rs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC53BB81FFCB546145212373 /* Pods-Tr4nsf0r3rs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tr4nsf0r3rs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tr4nsf0r3rs/Pods-Tr4nsf0r3rs.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,8 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				4878DF332084345B0040CD93 /* TeamsEditorTableViewController.swift */,
-				4878DF39208436FE0040CD93 /* MemberEditorViewController.swift */,
 				4878DF3B2084377B0040CD93 /* BattleResultViewController.swift */,
+				482D98AC208538240020EAA0 /* MemberEditorTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -362,7 +362,7 @@
 			files = (
 				4878DF0F20828EF10040CD93 /* TTeam.swift in Sources */,
 				4878DF36208434FE0040CD93 /* TeamHeaderTableViewCell.swift in Sources */,
-				4878DF3A208436FE0040CD93 /* MemberEditorViewController.swift in Sources */,
+				482D98AD208538240020EAA0 /* MemberEditorTableViewController.swift in Sources */,
 				4878DEF8208145200040CD93 /* AppDelegate.swift in Sources */,
 				4878DF0D208282120040CD93 /* Transformer.swift in Sources */,
 				4878DF342084345B0040CD93 /* TeamsEditorTableViewController.swift in Sources */,
