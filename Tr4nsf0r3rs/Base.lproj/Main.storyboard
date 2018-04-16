@@ -23,52 +23,73 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="teamHeaderCell" rowHeight="113" id="ArV-wC-wfu" customClass="TeamHeaderTableViewCell" customModule="Tr4nsf0r3rs" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="113"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ArV-wC-wfu" id="qRC-G3-dEV">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ArV-wC-wfu" id="qRC-G3-dEV" customClass="TeamHeaderContentView" customModule="Tr4nsf0r3rs" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="112.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Overview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hl-iv-9hy">
-                                            <rect key="frame" x="16" y="10" width="124" height="21"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ZH-lg-iQL" customClass="TeamHeaderDetailView" customModule="Tr4nsf0r3rs" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="112.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Overview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hl-iv-9hy">
+                                                    <rect key="frame" x="20" y="20" width="124" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="wNF-bh-74h"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a name for the team" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="orA-hI-Ini">
+                                                    <rect key="frame" x="51" y="44" width="240.5" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="dJq-IT-snq"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="2ZH-lg-iQL" id="jXp-Jm-TtU"/>
+                                                    </connections>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXm-m9-gfx">
+                                                    <rect key="frame" x="20" y="77.5" width="335" height="30"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Add member">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="QNW-cJ-qde" kind="show" identifier="AddEditTeamMemberSegue" id="OaR-o7-hm3"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="wNF-bh-74h"/>
+                                                <constraint firstItem="hXm-m9-gfx" firstAttribute="leading" secondItem="2ZH-lg-iQL" secondAttribute="leading" constant="20" id="0yO-sT-WQZ"/>
+                                                <constraint firstItem="orA-hI-Ini" firstAttribute="top" secondItem="2Hl-iv-9hy" secondAttribute="bottom" constant="3" id="8ST-hn-uHo"/>
+                                                <constraint firstItem="hXm-m9-gfx" firstAttribute="top" secondItem="orA-hI-Ini" secondAttribute="bottom" constant="8.5" id="OCY-CG-bgw"/>
+                                                <constraint firstAttribute="trailing" secondItem="hXm-m9-gfx" secondAttribute="trailing" constant="20" id="Swr-qI-1aN"/>
+                                                <constraint firstAttribute="bottom" secondItem="hXm-m9-gfx" secondAttribute="bottom" constant="5" id="VTD-vx-KZJ"/>
+                                                <constraint firstItem="2Hl-iv-9hy" firstAttribute="leading" secondItem="2ZH-lg-iQL" secondAttribute="leading" constant="20" id="Wtf-Qw-mMI"/>
+                                                <constraint firstItem="2Hl-iv-9hy" firstAttribute="top" secondItem="2ZH-lg-iQL" secondAttribute="top" constant="20" id="YeT-Qk-FOv"/>
+                                                <constraint firstItem="orA-hI-Ini" firstAttribute="leading" secondItem="2ZH-lg-iQL" secondAttribute="leadingMargin" constant="43" id="hyK-Rg-AdT"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Hl-iv-9hy" secondAttribute="trailing" constant="20" symbolic="YES" id="osa-hK-3Zs"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="orA-hI-Ini" secondAttribute="trailing" constant="20" id="oyZ-jn-C2d"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a name for the team" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="orA-hI-Ini">
-                                            <rect key="frame" x="39" y="34" width="320" height="30"/>
-                                            <nil key="textColor"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                                        </textField>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXm-m9-gfx">
-                                            <rect key="frame" x="16" y="77" width="343" height="30"/>
-                                            <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="hfl-k6-78l"/>
-                                            </constraints>
-                                            <state key="normal" title="Add member">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </state>
                                             <connections>
-                                                <segue destination="QNW-cJ-qde" kind="show" id="OaR-o7-hm3"/>
+                                                <outlet property="teamName" destination="orA-hI-Ini" id="2lN-Ys-RKB"/>
                                             </connections>
-                                        </button>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="orA-hI-Ini" firstAttribute="trailing" secondItem="qRC-G3-dEV" secondAttribute="trailingMargin" id="J5k-sV-UDn"/>
-                                        <constraint firstItem="orA-hI-Ini" firstAttribute="leading" secondItem="qRC-G3-dEV" secondAttribute="leadingMargin" constant="23" id="LCh-t3-CgG"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Hl-iv-9hy" secondAttribute="trailing" constant="20" symbolic="YES" id="OV2-Co-LSb"/>
-                                        <constraint firstItem="2Hl-iv-9hy" firstAttribute="leading" secondItem="qRC-G3-dEV" secondAttribute="leading" constant="16" id="Ol2-eX-at0"/>
-                                        <constraint firstItem="hXm-m9-gfx" firstAttribute="top" secondItem="orA-hI-Ini" secondAttribute="bottom" constant="13" id="SDh-ua-alw"/>
-                                        <constraint firstItem="orA-hI-Ini" firstAttribute="top" secondItem="2Hl-iv-9hy" secondAttribute="bottom" constant="3" id="UJR-mi-Sd9"/>
-                                        <constraint firstAttribute="bottom" secondItem="hXm-m9-gfx" secondAttribute="bottom" constant="5.5" id="WwO-7s-sVp"/>
-                                        <constraint firstItem="2Hl-iv-9hy" firstAttribute="top" secondItem="qRC-G3-dEV" secondAttribute="top" constant="10" id="Z3U-JE-yho"/>
-                                        <constraint firstItem="hXm-m9-gfx" firstAttribute="leading" secondItem="qRC-G3-dEV" secondAttribute="leading" constant="16" id="e9d-co-8Qw"/>
-                                        <constraint firstAttribute="trailing" secondItem="hXm-m9-gfx" secondAttribute="trailing" constant="16" id="peY-6U-5p3"/>
+                                        <constraint firstAttribute="trailing" secondItem="2ZH-lg-iQL" secondAttribute="trailing" id="8jY-HX-ipW"/>
+                                        <constraint firstItem="2ZH-lg-iQL" firstAttribute="top" secondItem="qRC-G3-dEV" secondAttribute="top" id="9S7-zC-koR"/>
+                                        <constraint firstAttribute="bottom" secondItem="2ZH-lg-iQL" secondAttribute="bottom" id="Ee1-Y6-HgD"/>
+                                        <constraint firstItem="2ZH-lg-iQL" firstAttribute="leading" secondItem="qRC-G3-dEV" secondAttribute="leading" id="w8E-ju-7zQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="detailView" destination="2ZH-lg-iQL" id="2Ww-8R-83K"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="teamMemberCell" rowHeight="82" id="3SG-hw-diq" customClass="TeamMemberTableViewCell" customModule="Tr4nsf0r3rs" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="141" width="375" height="82"/>
@@ -89,17 +110,17 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gOB-zZ-fWT">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gOB-zZ-fWT">
                                                     <rect key="frame" x="258" y="0.0" width="65" height="60"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeN-Dw-SC9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="65" height="25"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfh-la-uw3">
-                                                            <rect key="frame" x="0.0" y="35" width="65" height="25"/>
+                                                            <rect key="frame" x="0.0" y="30" width="65" height="30"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -120,10 +141,52 @@
                                         <constraint firstItem="cH6-qr-jcK" firstAttribute="top" secondItem="JIQ-2s-L4W" secondAttribute="topMargin" id="vWy-4l-wIT"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="0.50931078767123283" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="name" destination="Mco-hk-bOf" id="H0c-vG-zTX"/>
                                     <outlet property="overallRating" destination="sfh-la-uw3" id="FpB-ta-05n"/>
+                                    <segue destination="QNW-cJ-qde" kind="show" identifier="AddEditTeamMemberSegue" id="1ss-Zw-7jf"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="startCombatCell" rowHeight="93" id="3iC-Ol-5YW">
+                                <rect key="frame" x="0.0" y="223" width="375" height="93"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3iC-Ol-5YW" id="yDv-NR-ISN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGc-Vv-HvR">
+                                            <rect key="frame" x="5" y="20" width="365" height="2"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="2" id="vt1-yU-NV8"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecm-ah-GsA">
+                                            <rect key="frame" x="16" y="42" width="343" height="40"/>
+                                            <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="f5G-MV-a8a"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <state key="normal" title="Start Combat">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="startCombat:" destination="dEF-Y0-a0i" eventType="touchUpInside" id="OJF-6G-WXc"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="uGc-Vv-HvR" firstAttribute="top" secondItem="yDv-NR-ISN" secondAttribute="top" constant="20" id="1ZE-Bd-HUN"/>
+                                        <constraint firstItem="ecm-ah-GsA" firstAttribute="leading" secondItem="yDv-NR-ISN" secondAttribute="leadingMargin" id="9LS-Id-EdX"/>
+                                        <constraint firstItem="ecm-ah-GsA" firstAttribute="top" secondItem="uGc-Vv-HvR" secondAttribute="bottom" constant="20" id="CJF-9x-jwg"/>
+                                        <constraint firstItem="uGc-Vv-HvR" firstAttribute="leading" secondItem="yDv-NR-ISN" secondAttribute="leading" constant="5" id="DlI-Xo-jaP"/>
+                                        <constraint firstAttribute="trailing" secondItem="uGc-Vv-HvR" secondAttribute="trailing" constant="5" id="OmS-ez-wZd"/>
+                                        <constraint firstItem="ecm-ah-GsA" firstAttribute="bottom" secondItem="yDv-NR-ISN" secondAttribute="bottomMargin" id="UMc-47-asx"/>
+                                        <constraint firstItem="ecm-ah-GsA" firstAttribute="trailing" secondItem="yDv-NR-ISN" secondAttribute="trailingMargin" id="vV8-Ue-N5Y"/>
+                                    </constraints>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -132,10 +195,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Team Editor" id="klF-OX-yoq"/>
+                    <connections>
+                        <segue destination="0cf-Mr-kgv" kind="show" identifier="combatResultSegue" id="P4t-7r-Ja8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qo-gG-3Gt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="189.59999999999999" y="163.26836581709148"/>
+            <point key="canvasLocation" x="250" y="163"/>
         </scene>
         <!--Member Editor View Controller-->
         <scene sceneID="08X-vl-Tiq">
@@ -188,5 +254,8 @@
             <point key="canvasLocation" x="-762" y="164"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1ss-Zw-7jf"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

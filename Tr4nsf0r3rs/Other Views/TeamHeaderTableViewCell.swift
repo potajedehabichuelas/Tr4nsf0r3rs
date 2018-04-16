@@ -10,8 +10,7 @@ import UIKit
 
 class TeamHeaderTableViewCell: UITableViewCell {
     
-    
-    @IBOutlet weak var teamName: UILabel!
+    @IBOutlet weak var detailView: TeamHeaderDetailView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,5 +22,4 @@ class TeamHeaderTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
