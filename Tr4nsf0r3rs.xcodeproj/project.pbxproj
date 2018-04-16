@@ -26,6 +26,11 @@
 		4878DF2E208411740040CD93 /* Transformer.json in Resources */ = {isa = PBXBuildFile; fileRef = 4878DF2420829A560040CD93 /* Transformer.json */; };
 		4878DF30208418530040CD93 /* TTeamTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF2F208418530040CD93 /* TTeamTest.swift */; };
 		4878DF322084186B0040CD93 /* TeamTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 4878DF312084186B0040CD93 /* TeamTest.json */; };
+		4878DF342084345B0040CD93 /* TeamsEditorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF332084345B0040CD93 /* TeamsEditorTableViewController.swift */; };
+		4878DF36208434FE0040CD93 /* TeamHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF35208434FD0040CD93 /* TeamHeaderTableViewCell.swift */; };
+		4878DF38208435190040CD93 /* TeamMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF37208435190040CD93 /* TeamMemberTableViewCell.swift */; };
+		4878DF3A208436FE0040CD93 /* MemberEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF39208436FE0040CD93 /* MemberEditorViewController.swift */; };
+		4878DF3C2084377B0040CD93 /* BattleResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DF3B2084377B0040CD93 /* BattleResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		4878DF2C208411690040CD93 /* TransformerTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TransformerTest.json; sourceTree = "<group>"; };
 		4878DF2F208418530040CD93 /* TTeamTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTeamTest.swift; sourceTree = "<group>"; };
 		4878DF312084186B0040CD93 /* TeamTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TeamTest.json; sourceTree = "<group>"; };
+		4878DF332084345B0040CD93 /* TeamsEditorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsEditorTableViewController.swift; sourceTree = "<group>"; };
+		4878DF35208434FD0040CD93 /* TeamHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		4878DF37208435190040CD93 /* TeamMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberTableViewCell.swift; sourceTree = "<group>"; };
+		4878DF39208436FE0040CD93 /* MemberEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberEditorViewController.swift; sourceTree = "<group>"; };
+		4878DF3B2084377B0040CD93 /* BattleResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleResultViewController.swift; sourceTree = "<group>"; };
 		C1A31FE9524739663E6E9A16 /* Pods_Tr4nsf0r3rs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tr4nsf0r3rs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC53BB81FFCB546145212373 /* Pods-Tr4nsf0r3rs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tr4nsf0r3rs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tr4nsf0r3rs/Pods-Tr4nsf0r3rs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +130,8 @@
 		4878DF09208280010040CD93 /* Other Views */ = {
 			isa = PBXGroup;
 			children = (
+				4878DF35208434FD0040CD93 /* TeamHeaderTableViewCell.swift */,
+				4878DF37208435190040CD93 /* TeamMemberTableViewCell.swift */,
 			);
 			path = "Other Views";
 			sourceTree = "<group>";
@@ -137,6 +149,9 @@
 		4878DF0B208280010040CD93 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4878DF332084345B0040CD93 /* TeamsEditorTableViewController.swift */,
+				4878DF39208436FE0040CD93 /* MemberEditorViewController.swift */,
+				4878DF3B2084377B0040CD93 /* BattleResultViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -318,9 +333,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4878DF0F20828EF10040CD93 /* TTeam.swift in Sources */,
+				4878DF36208434FE0040CD93 /* TeamHeaderTableViewCell.swift in Sources */,
+				4878DF3A208436FE0040CD93 /* MemberEditorViewController.swift in Sources */,
 				4878DEF8208145200040CD93 /* AppDelegate.swift in Sources */,
 				4878DF0D208282120040CD93 /* Transformer.swift in Sources */,
+				4878DF342084345B0040CD93 /* TeamsEditorTableViewController.swift in Sources */,
 				4878DF1120828F450040CD93 /* TBattle.swift in Sources */,
+				4878DF38208435190040CD93 /* TeamMemberTableViewCell.swift in Sources */,
+				4878DF3C2084377B0040CD93 /* BattleResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

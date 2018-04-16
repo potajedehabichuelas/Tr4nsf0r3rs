@@ -6,5 +6,6 @@ target 'Tr4nsf0r3rs' do
   use_frameworks!
 
   # Pods for Tr4nsf0r3rs
+  pod 'IQKeyboardManager'
 
 end
