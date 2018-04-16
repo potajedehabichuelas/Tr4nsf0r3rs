@@ -47,7 +47,7 @@ class TTeamTest: XCTestCase {
             }
             
         } catch {
-            XCTFail("Wrong file: TeamTest.json")
+            XCTFail("Error parsing file: TeamTest.json")
         }
     }
     

@@ -21,7 +21,7 @@ struct Transformer: Codable {
     
     var name: String
     
-    var isAlive: Bool = true
+    var isAlive: Bool? = true
 
     var strength: Int {
         didSet {
