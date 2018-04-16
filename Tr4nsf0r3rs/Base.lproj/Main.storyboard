@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Transformers.ttf">
+            <string>TransformersMovie</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Team Editor-->
         <scene sceneID="X9F-gT-OVp">
@@ -31,21 +36,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="112.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Overview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hl-iv-9hy">
-                                                    <rect key="frame" x="20" y="20" width="124" height="21"/>
+                                                    <rect key="frame" x="20" y="20" width="123" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="wNF-bh-74h"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a name for the team" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="orA-hI-Ini">
-                                                    <rect key="frame" x="51" y="44" width="240.5" height="25"/>
+                                                    <rect key="frame" x="51" y="44" width="266.5" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="dJq-IT-snq"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="19"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="2ZH-lg-iQL" id="jXp-Jm-TtU"/>
@@ -54,6 +59,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXm-m9-gfx">
                                                     <rect key="frame" x="20" y="77.5" width="335" height="30"/>
                                                     <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <state key="normal" title="Add member">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
@@ -106,7 +112,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="Yn1-Xa-btk"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -115,13 +121,13 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeN-Dw-SC9">
                                                             <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="16"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfh-la-uw3">
                                                             <rect key="frame" x="0.0" y="30" width="65" height="30"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                            <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -168,7 +174,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="f5G-MV-a8a"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                             <state key="normal" title="Start Combat">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
@@ -222,21 +228,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXd-c4-XOq">
-                                                    <rect key="frame" x="16" y="14" width="45" height="21"/>
+                                                    <rect key="frame" x="16" y="14" width="43.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="fpr-Js-h3t"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XGn-WS-aTc">
-                                                    <rect key="frame" x="90" y="10" width="269" height="30"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XGn-WS-aTc">
+                                                    <rect key="frame" x="88.5" y="10" width="270.5" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="See-2h-FDF"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="IGj-iS-aBS" id="dGl-nN-GuV"/>
@@ -260,11 +266,11 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIP-ok-HHa">
-                                                    <rect key="frame" x="163.5" y="12" width="49.5" height="21"/>
+                                                    <rect key="frame" x="162" y="12" width="52.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="dV7-GX-0YF"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="20"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -284,21 +290,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strength" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsM-Zm-S6S">
-                                                    <rect key="frame" x="16" y="14" width="67" height="21"/>
+                                                    <rect key="frame" x="16" y="14" width="69" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Nyl-dP-Trt"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qci-ow-IeS">
-                                                    <rect key="frame" x="196" y="9" width="163" height="30"/>
+                                                    <rect key="frame" x="199" y="9" width="160" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="2Vq-2i-ltT"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="IGj-iS-aBS" id="haH-82-kPA"/>
@@ -310,7 +316,7 @@
                                                 <constraint firstItem="Qci-ow-IeS" firstAttribute="top" secondItem="yNJ-qa-kNV" secondAttribute="top" constant="9" id="ZtL-PL-CFp"/>
                                                 <constraint firstItem="AsM-Zm-S6S" firstAttribute="top" secondItem="yNJ-qa-kNV" secondAttribute="topMargin" constant="3" id="gDp-D7-pYN"/>
                                                 <constraint firstItem="AsM-Zm-S6S" firstAttribute="leading" secondItem="yNJ-qa-kNV" secondAttribute="leadingMargin" id="jCg-Nu-PR6"/>
-                                                <constraint firstItem="Qci-ow-IeS" firstAttribute="leading" secondItem="AsM-Zm-S6S" secondAttribute="trailing" constant="113" id="kYS-WP-FdC"/>
+                                                <constraint firstItem="Qci-ow-IeS" firstAttribute="leading" secondItem="AsM-Zm-S6S" secondAttribute="trailing" constant="114" id="kYS-WP-FdC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -322,21 +328,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intelligence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJ4-sh-s0n">
-                                                    <rect key="frame" x="16" y="14" width="88" height="21"/>
+                                                    <rect key="frame" x="16" y="14" width="94.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="CMz-jX-8YC"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ev-ti-UC5">
-                                                    <rect key="frame" x="195" y="9" width="163" height="30"/>
+                                                    <rect key="frame" x="199" y="9" width="160" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="zRE-32-aCl"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="IGj-iS-aBS" id="yfj-bo-3ez"/>
@@ -345,9 +351,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="zJ4-sh-s0n" firstAttribute="top" secondItem="dIZ-GZ-9If" secondAttribute="topMargin" constant="3" id="5lg-YK-SN7"/>
-                                                <constraint firstItem="0Ev-ti-UC5" firstAttribute="leading" secondItem="zJ4-sh-s0n" secondAttribute="trailing" constant="91" id="Chj-L7-uqK"/>
+                                                <constraint firstItem="0Ev-ti-UC5" firstAttribute="leading" secondItem="zJ4-sh-s0n" secondAttribute="trailing" constant="88.5" id="Chj-L7-uqK"/>
                                                 <constraint firstItem="0Ev-ti-UC5" firstAttribute="top" secondItem="dIZ-GZ-9If" secondAttribute="top" constant="9" id="V4Z-uV-Rfu"/>
-                                                <constraint firstAttribute="trailing" secondItem="0Ev-ti-UC5" secondAttribute="trailing" constant="17" id="Zmx-7L-Qhp"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Ev-ti-UC5" secondAttribute="trailing" constant="16" id="Zmx-7L-Qhp"/>
                                                 <constraint firstItem="zJ4-sh-s0n" firstAttribute="leading" secondItem="dIZ-GZ-9If" secondAttribute="leadingMargin" id="weh-bq-kRU"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -360,21 +366,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvU-u8-cZb">
-                                                    <rect key="frame" x="16" y="14" width="50" height="21"/>
+                                                    <rect key="frame" x="16" y="14" width="45" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="CTw-yq-Iv0"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Esa-gc-PnI">
-                                                    <rect key="frame" x="196" y="9" width="163" height="30"/>
+                                                    <rect key="frame" x="199" y="9" width="160" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="WSS-3i-yLS"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="IGj-iS-aBS" id="LBf-Jo-9gy"/>
@@ -383,7 +389,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Esa-gc-PnI" firstAttribute="top" secondItem="C3r-ie-3FQ" secondAttribute="top" constant="9" id="1UR-Jj-vef"/>
-                                                <constraint firstItem="Esa-gc-PnI" firstAttribute="leading" secondItem="PvU-u8-cZb" secondAttribute="trailing" constant="130" id="aaM-XT-ELU"/>
+                                                <constraint firstItem="Esa-gc-PnI" firstAttribute="leading" secondItem="PvU-u8-cZb" secondAttribute="trailing" constant="138" id="aaM-XT-ELU"/>
                                                 <constraint firstAttribute="trailing" secondItem="Esa-gc-PnI" secondAttribute="trailing" constant="16" id="meg-J7-6E8"/>
                                                 <constraint firstItem="PvU-u8-cZb" firstAttribute="leading" secondItem="C3r-ie-3FQ" secondAttribute="leadingMargin" id="ufE-Ch-h4b"/>
                                                 <constraint firstItem="PvU-u8-cZb" firstAttribute="top" secondItem="C3r-ie-3FQ" secondAttribute="topMargin" constant="3" id="vnY-gZ-vlZ"/>
@@ -398,21 +404,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endurance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="no4-VH-UFg">
-                                                    <rect key="frame" x="16" y="14" width="82" height="21"/>
+                                                    <rect key="frame" x="16" y="14" width="82.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Oj5-SZ-zl4"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0s-Jg-gY2">
-                                                    <rect key="frame" x="196" y="10" width="163" height="30"/>
+                                                    <rect key="frame" x="199" y="9" width="160" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="0AC-b5-2el"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="IGj-iS-aBS" id="MVO-QZ-z2b"/>
@@ -420,10 +426,10 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="h0s-Jg-gY2" firstAttribute="top" secondItem="lzq-x2-UWo" secondAttribute="top" constant="10" id="DIN-sY-VKq"/>
+                                                <constraint firstItem="h0s-Jg-gY2" firstAttribute="top" secondItem="lzq-x2-UWo" secondAttribute="top" constant="9" id="DIN-sY-VKq"/>
+                                                <constraint firstItem="h0s-Jg-gY2" firstAttribute="leading" secondItem="no4-VH-UFg" secondAttribute="trailing" constant="100.5" id="K5y-rk-hUp"/>
                                                 <constraint firstItem="no4-VH-UFg" firstAttribute="top" secondItem="lzq-x2-UWo" secondAttribute="topMargin" constant="3" id="TIl-IO-wTf"/>
                                                 <constraint firstItem="no4-VH-UFg" firstAttribute="leading" secondItem="lzq-x2-UWo" secondAttribute="leadingMargin" id="YgZ-sQ-NlJ"/>
-                                                <constraint firstItem="h0s-Jg-gY2" firstAttribute="leading" secondItem="no4-VH-UFg" secondAttribute="trailing" constant="98" id="bde-Em-IcN"/>
                                                 <constraint firstAttribute="trailing" secondItem="h0s-Jg-gY2" secondAttribute="trailing" constant="16" id="t9X-gS-CJa"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -440,17 +446,17 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="qdg-t2-bPK"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6fs-wo-GBF">
-                                                    <rect key="frame" x="196" y="10" width="163" height="30"/>
+                                                    <rect key="frame" x="199" y="10" width="160" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="Pgp-qv-hCJ"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="IGj-iS-aBS" id="gmJ-FC-w9u"/>
@@ -458,7 +464,7 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="6fs-wo-GBF" firstAttribute="leading" secondItem="4Jt-Zp-Rxg" secondAttribute="trailing" constant="141" id="0Vk-SA-UAC"/>
+                                                <constraint firstItem="6fs-wo-GBF" firstAttribute="leading" secondItem="4Jt-Zp-Rxg" secondAttribute="trailing" constant="144" id="0Vk-SA-UAC"/>
                                                 <constraint firstItem="6fs-wo-GBF" firstAttribute="top" secondItem="tJP-It-SjH" secondAttribute="top" constant="10" id="K3d-nn-v0L"/>
                                                 <constraint firstItem="4Jt-Zp-Rxg" firstAttribute="top" secondItem="tJP-It-SjH" secondAttribute="topMargin" constant="3" id="Tc6-9g-nqf"/>
                                                 <constraint firstItem="4Jt-Zp-Rxg" firstAttribute="leading" secondItem="tJP-It-SjH" secondAttribute="leadingMargin" id="tOh-XL-F6e"/>
@@ -474,21 +480,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXo-WL-A3x">
-                                                    <rect key="frame" x="16" y="14" width="66" height="21"/>
+                                                    <rect key="frame" x="16" y="14" width="65" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="ZNq-V3-b6b"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5LG-ve-p27">
-                                                    <rect key="frame" x="196" y="9" width="163" height="30"/>
+                                                    <rect key="frame" x="199" y="9" width="160" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="jCN-ng-4Ry"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="IGj-iS-aBS" id="vJj-zl-mxv"/>
@@ -499,7 +505,7 @@
                                                 <constraint firstItem="RXo-WL-A3x" firstAttribute="top" secondItem="fKT-To-ymv" secondAttribute="topMargin" constant="3" id="Hfg-e7-tmF"/>
                                                 <constraint firstAttribute="trailing" secondItem="5LG-ve-p27" secondAttribute="trailing" constant="16" id="Xgo-cX-67k"/>
                                                 <constraint firstItem="RXo-WL-A3x" firstAttribute="leading" secondItem="fKT-To-ymv" secondAttribute="leadingMargin" id="Xwr-zG-euI"/>
-                                                <constraint firstItem="5LG-ve-p27" firstAttribute="leading" secondItem="RXo-WL-A3x" secondAttribute="trailing" constant="114" id="atX-AF-1gu"/>
+                                                <constraint firstItem="5LG-ve-p27" firstAttribute="leading" secondItem="RXo-WL-A3x" secondAttribute="trailing" constant="118" id="atX-AF-1gu"/>
                                                 <constraint firstItem="5LG-ve-p27" firstAttribute="top" secondItem="fKT-To-ymv" secondAttribute="top" constant="9" id="vcf-AX-h1W"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -512,21 +518,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firepower" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYh-rq-BUx">
-                                                    <rect key="frame" x="16" y="14" width="76" height="21"/>
+                                                    <rect key="frame" x="16" y="14" width="80.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="rvf-e7-es5"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="orf-h7-xpW">
-                                                    <rect key="frame" x="196" y="10" width="163" height="30"/>
+                                                    <rect key="frame" x="199" y="10" width="160" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="mf7-uS-DOO"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="IGj-iS-aBS" id="AyF-6r-eQv"/>
@@ -538,7 +544,7 @@
                                                 <constraint firstItem="lYh-rq-BUx" firstAttribute="leading" secondItem="COT-aG-9Ko" secondAttribute="leadingMargin" id="N1E-Bh-FV6"/>
                                                 <constraint firstItem="orf-h7-xpW" firstAttribute="top" secondItem="COT-aG-9Ko" secondAttribute="top" constant="10" id="Wtg-Rf-9JF"/>
                                                 <constraint firstItem="lYh-rq-BUx" firstAttribute="top" secondItem="COT-aG-9Ko" secondAttribute="topMargin" constant="3" id="ayL-TY-ckY"/>
-                                                <constraint firstItem="orf-h7-xpW" firstAttribute="leading" secondItem="lYh-rq-BUx" secondAttribute="trailing" constant="104" id="o0p-0a-nia"/>
+                                                <constraint firstItem="orf-h7-xpW" firstAttribute="leading" secondItem="lYh-rq-BUx" secondAttribute="trailing" constant="102.5" id="o0p-0a-nia"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -550,21 +556,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKd-QI-tmv">
-                                                    <rect key="frame" x="16" y="14" width="31" height="21"/>
+                                                    <rect key="frame" x="16" y="14" width="39.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="qx2-9t-jLY"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4H-hf-jdx">
-                                                    <rect key="frame" x="196" y="9" width="163" height="30"/>
+                                                    <rect key="frame" x="199" y="9" width="160" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="nxP-UN-VCb"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="IGj-iS-aBS" id="9nU-dy-LnE"/>
@@ -576,7 +582,7 @@
                                                 <constraint firstItem="bKd-QI-tmv" firstAttribute="leading" secondItem="6y6-T8-mDk" secondAttribute="leadingMargin" id="9V8-Lm-6e2"/>
                                                 <constraint firstItem="bKd-QI-tmv" firstAttribute="top" secondItem="6y6-T8-mDk" secondAttribute="topMargin" constant="3" id="U89-DQ-Jyy"/>
                                                 <constraint firstAttribute="trailing" secondItem="n4H-hf-jdx" secondAttribute="trailing" constant="16" id="YEK-iW-Zmq"/>
-                                                <constraint firstItem="n4H-hf-jdx" firstAttribute="leading" secondItem="bKd-QI-tmv" secondAttribute="trailing" constant="149" id="qze-4u-C0l"/>
+                                                <constraint firstItem="n4H-hf-jdx" firstAttribute="leading" secondItem="bKd-QI-tmv" secondAttribute="trailing" constant="143.5" id="qze-4u-C0l"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -590,6 +596,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwd-GK-ey8">
                                                     <rect key="frame" x="10" y="10" width="355" height="39.5"/>
                                                     <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                                     <state key="normal" title="Save"/>
                                                     <connections>
                                                         <action selector="save:" destination="IGj-iS-aBS" eventType="touchUpInside" id="U1V-Rr-qyC"/>
@@ -642,7 +649,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Bw4-4z-hPp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -651,7 +658,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Dvy-09-m1b"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -660,23 +667,24 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="y4a-In-vjU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Battle Result description" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4pu-yK-JwG">
                                 <rect key="frame" x="40" y="354" width="295" height="293"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX Victory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SU9-Hs-HE8">
-                                <rect key="frame" x="20" y="301" width="335" height="45"/>
+                                <rect key="frame" x="0.0" y="301" width="375" height="45"/>
+                                <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="1cE-41-Zah"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="TransformersMovie" family="Transformers" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -687,7 +695,7 @@
                             <constraint firstItem="9ih-Sh-aM1" firstAttribute="trailing" secondItem="ycV-V0-Crs" secondAttribute="trailing" constant="16" id="8z4-8D-nRg"/>
                             <constraint firstItem="9ih-Sh-aM1" firstAttribute="trailing" secondItem="4pu-yK-JwG" secondAttribute="trailing" constant="40" id="BpM-vh-Pzb"/>
                             <constraint firstItem="vap-pD-F2E" firstAttribute="top" secondItem="ycV-V0-Crs" secondAttribute="bottom" constant="7" id="IEQ-Nr-3tm"/>
-                            <constraint firstItem="9ih-Sh-aM1" firstAttribute="trailing" secondItem="SU9-Hs-HE8" secondAttribute="trailing" constant="20" id="Uvg-Hj-rOx"/>
+                            <constraint firstItem="9ih-Sh-aM1" firstAttribute="trailing" secondItem="SU9-Hs-HE8" secondAttribute="trailing" id="Uvg-Hj-rOx"/>
                             <constraint firstItem="ycV-V0-Crs" firstAttribute="leading" secondItem="9ih-Sh-aM1" secondAttribute="leading" constant="16" id="XLi-ne-AC9"/>
                             <constraint firstItem="vap-pD-F2E" firstAttribute="leading" secondItem="9ih-Sh-aM1" secondAttribute="leading" constant="16" id="dKN-iX-098"/>
                             <constraint firstItem="9ih-Sh-aM1" firstAttribute="trailing" secondItem="yXc-3g-4TR" secondAttribute="trailing" constant="16" id="fLV-Mt-nJy"/>
@@ -697,7 +705,7 @@
                             <constraint firstItem="yXc-3g-4TR" firstAttribute="top" secondItem="vap-pD-F2E" secondAttribute="bottom" constant="8" id="xbO-yP-zNr"/>
                             <constraint firstItem="SU9-Hs-HE8" firstAttribute="centerY" secondItem="xaa-Qi-HxH" secondAttribute="centerY" constant="-10" id="yNI-Ye-V47"/>
                             <constraint firstItem="4pu-yK-JwG" firstAttribute="leading" secondItem="9ih-Sh-aM1" secondAttribute="leading" constant="40" id="z2P-oY-ZEZ"/>
-                            <constraint firstItem="SU9-Hs-HE8" firstAttribute="leading" secondItem="9ih-Sh-aM1" secondAttribute="leading" constant="20" id="zQ4-qz-co2"/>
+                            <constraint firstItem="SU9-Hs-HE8" firstAttribute="leading" secondItem="9ih-Sh-aM1" secondAttribute="leading" id="zQ4-qz-co2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9ih-Sh-aM1"/>
                     </view>

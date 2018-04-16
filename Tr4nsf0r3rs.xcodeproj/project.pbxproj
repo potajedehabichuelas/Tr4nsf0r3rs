@@ -10,6 +10,7 @@
 		001C97035693DF64C55E3460 /* Pods_Tr4nsf0r3rs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A31FE9524739663E6E9A16 /* Pods_Tr4nsf0r3rs.framework */; };
 		482D98AB20850D020020EAA0 /* TeamHeaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482D98AA20850D020020EAA0 /* TeamHeaderContentView.swift */; };
 		482D98AD208538240020EAA0 /* MemberEditorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482D98AC208538240020EAA0 /* MemberEditorTableViewController.swift */; };
+		482D98AF2085595E0020EAA0 /* Transformers.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 482D98AE208558840020EAA0 /* Transformers.ttf */; };
 		4878DEF8208145200040CD93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DEF7208145200040CD93 /* AppDelegate.swift */; };
 		4878DEFD208145200040CD93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4878DEFB208145200040CD93 /* Main.storyboard */; };
 		4878DEFF208145230040CD93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4878DEFE208145230040CD93 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		097DFC0CAE5369374DB78ECE /* Pods-Tr4nsf0r3rs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tr4nsf0r3rs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tr4nsf0r3rs/Pods-Tr4nsf0r3rs.release.xcconfig"; sourceTree = "<group>"; };
 		482D98AA20850D020020EAA0 /* TeamHeaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamHeaderContentView.swift; sourceTree = "<group>"; };
 		482D98AC208538240020EAA0 /* MemberEditorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberEditorTableViewController.swift; sourceTree = "<group>"; };
+		482D98AE208558840020EAA0 /* Transformers.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Transformers.ttf; sourceTree = "<group>"; };
 		4878DEF4208145200040CD93 /* Tr4nsf0r3rs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tr4nsf0r3rs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4878DEF7208145200040CD93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4878DEFC208145200040CD93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		4878DF2320829A390040CD93 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				482D98AE208558840020EAA0 /* Transformers.ttf */,
 				4878DF2820829CA00040CD93 /* AutoBotsTeam.json */,
 				4878DF2620829B660040CD93 /* DecepticonsTeam.json */,
 				4878DF2420829A560040CD93 /* Transformer.json */,
@@ -289,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482D98AF2085595E0020EAA0 /* Transformers.ttf in Resources */,
 				4878DF02208145230040CD93 /* LaunchScreen.storyboard in Resources */,
 				4878DF2920829CA00040CD93 /* AutoBotsTeam.json in Resources */,
 				4878DEFF208145230040CD93 /* Assets.xcassets in Resources */,

@@ -33,7 +33,7 @@ class BattleResultViewController: UIViewController {
             self.victoryLabel.text = self.battle.winnerTeam
             //Set description
             let (survivorsT1, survivorsT2) = self.battle.getTeamsSurvivors()
-            self.battleResultDescription.text = "There has been \(self.battle.numBattles) battle(s)\n\n \(self.battle.team1.name) team survivors: \(survivorsT1) \n\n\(self.battle.team2.name) team survivors: \(survivorsT2)\n"
+            self.battleResultDescription.text = "There has been \(self.battle.numBattles) battle(s)\n\n\n \(self.battle.team1.name) team survivors: \(survivorsT1) \n\n\n\(self.battle.team2.name) team survivors: \(survivorsT2)\n"
         } else {
             print("Error setting battle teams")
         }
