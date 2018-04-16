@@ -9,7 +9,7 @@
 import UIKit
 
 private struct TotalWinners {
-    static let transformerNames = ["Optimus Prime", "Predaking"]
+    static let transformerNames = ["OPTIMUS PRIME", "PREDAKING"]
 }
 
 struct SpecsRange {
@@ -113,7 +113,7 @@ struct Transformer: Codable {
     }
     
     func isTotalWinner() -> Bool {
-        return TotalWinners.transformerNames.contains(self.name) ? true : false
+        return TotalWinners.transformerNames.contains(self.name.uppercased()) ? true : false
     }
 
 }
